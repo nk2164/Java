@@ -7,7 +7,7 @@ public class P1Alt {
                  sumMultOf(15,maxNum); //Subtracting multiples of
                                        //15 since we are looking
                                        //for sumMultOf(3) or (5)
-                                       //not both.
+                                       //not both (upto maxNum).
 
     System.out.println(result);
   }
