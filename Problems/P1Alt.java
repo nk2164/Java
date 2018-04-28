@@ -4,8 +4,8 @@ public class P1Alt {
                        //number
     int result = sumMultOf(3,maxNum) +
                  sumMultOf(5,maxNum) -
-                 sumMultOf(15,maxNum); //Subtracting multiples of
-                                       //15 since we are looking
+                 sumMultOf(15,maxNum); //Subtracting sumMultOf(15)
+                                       //since we are looking
                                        //for sumMultOf(3) or (5)
                                        //not both (upto maxNum).
 
