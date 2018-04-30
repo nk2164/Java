@@ -30,7 +30,7 @@ class P0002  {
   }
 
   private static boolean isEven(int num){
-    return (num%2 == 0);  // return true of even else false
+    return (num%2 == 0);  // return true if even, else false.
   }
 
 }
