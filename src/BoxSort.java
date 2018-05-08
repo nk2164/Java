@@ -1,38 +1,3 @@
-class Box implements Comparable<Object>
-{
-  private double length, height, depth;
-
-  public Box( double length, double height, double depth )
-  {
-    this.length = length;
-    this.height = height;
-    this.depth  = depth;
-  }
-
-  public double volume()
-  {
-    return length*height*depth;
-  }
-
-  // compare this Box to another Box
-  public int compareTo( Object other ){
-      Box box = (Box) other;
-
-      if (this.volume() < box.volume()) {
-        return -1;
-      }
-      else if (this.volume() > box.volume()) {
-        return 1;
-      }
-      return 0;
-    }
-
-  public String toString()
-  {
-    return( "length: " + length + ",  height: " + height + ",  depth: " + depth + ",  volume: " + volume() );
-  }
-}
-
 public class BoxSort
 {
 
