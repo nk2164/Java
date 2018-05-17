@@ -31,17 +31,53 @@ class TestC2 {
     // int x = (y > 5) ? (2 * y) : (3 * y);
     // System.out.println("The value of x is "+x);
 
-    int x = 1;
-    switch (x) {
-      default:
-        System.out.println("In the default");
-        break;
-      case 1:
-        System.out.println("The value is 1");
-        break;
-      case 2:
-        System.out.println("The value is 2");
-        break;
+    // int x = 1;
+    // switch (x) {
+    //   default:
+    //     System.out.println("In the default");
+    //     break;
+    //   case 1:
+    //     System.out.println("The value is 1");
+    //     break;
+    //   case 2:
+    //     System.out.println("The value is 2");
+    //     break;
+
+    // int x = 0;
+    // do {
+    //   x++;
+    // } while(false);
+    // System.out.println(x);  // Outputs 1
+
+    // for(int i = 0; i < 10; i++) {
+    //    System.out.println(i + " ");
+    //  }
+
+    // int x = 0;
+    // for(long y = 0,z = 4; x < 5 && y < 10; x++, y++) {
+    //   System.out.println(y + " ");
+    // }
+    // System.out.println(x);
+    //
+    // int x = 0;
+    // for(long y = 0, x = 4; x < 5 && y < 10; x++, y++) {   // DOES NOT COMPILE
+    //   System.out.print(x + " ");
+    // }
+
+    // int x = 0;
+    // long y = 10;
+    // for(y = 0, x = 4; x < 5 && y < 10; x++, y++) {
+    //   System.out.print(x + " ");
+    // }
+
+    // for(long y = 0, int x = 4; x < 5 && y<10; x++, y++) {   // DOES NOT COMPILE
+    //   System.out.print(x + " ");
+    // }
+
+    for(long y = 0, x = 4; x < 5 && y < 10; x++, y++) {
+      System.out.print(y + " ");
     }
-  }
+    System.out.print(x);  // DOES NOT COMPILE
+
+    }
 }
