@@ -1,13 +1,21 @@
 import java.util.*;
+import java.time.*;
 
 class TestC2 {
 
 public static void main(String ... args) {
 
-        ArrayList list = new ArrayList();
-        list.add("hawk");  // [hawk]
-        list.add(Boolean.TRUE); // [hawk, true]
-        System.out.println(list); // [hawk, true]
+        LocalDate start = LocalDate.of(2015, Month.JANUARY, 1);
+        LocalDate end = LocalDate.of(2015, Month.MARCH, 30);
+        performAnimalEnrichment(start, end);
+}
+
+private static void performAnimalEnrichment(LocalDate start, LocalDate end) {
+        LocalDate upTo = start;
+        while (upTo.isBefore(end)) {    // check if still before end
+                System.out.println("give new toy: " + upTo);
+                upTo  = upTo.plusMonths(1);       // add a month
+        }
 }
 
 }
