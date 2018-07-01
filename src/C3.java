@@ -2,7 +2,7 @@ import java.time.format.*;
 import java.time.*;
 import java.util.*;
 
-class TestC2 {
+class C3 {
 
 public static void main(String[] args) {
 
