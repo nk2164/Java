@@ -9,7 +9,6 @@ private static final ArrayList<String> values = new ArrayList<>();
 public static void main(String[] args) {
         values.add("changed");
         ArrayList<String> newvalues = new ArrayList<>();
-        values = newvalues;
 }
 
 }
