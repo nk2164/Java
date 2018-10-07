@@ -1,5 +1,6 @@
 public class Animal {
 private String species;
+private String genre;
 private boolean canHop;
 private boolean canSwim;
 
