@@ -1,3 +1,4 @@
+package com.nk2164.projecteuler;
 public class P1Alt {
   public static void main(String[] args) {
     int maxNum = 1000; //Find sum of multiples upto this

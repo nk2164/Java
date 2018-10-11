@@ -1,3 +1,4 @@
+package com.nk2164.projecteuler;
 class P0001 {
   public static void main(String[] args) {
     int i =0,count = 0;

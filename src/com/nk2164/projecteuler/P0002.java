@@ -1,3 +1,4 @@
+package com.nk2164.projecteuler;
 // find the sum of the even valued fibonacci terms less than 4 million.
 
 class P0002  {
