@@ -1,28 +1,17 @@
 package com.nk2164.basics;
 
 public class CurrencyConverter {
-	// int variables representing different currency exchange rates relative
-	// to USD.
-	int rupee = 63;
-	int dirham = 3;
-	int real = 3;
-	int chilean_peso = 595;
-	int mexican_peso = 18;
-	int _yen = 107;
-	int $australian = 2;
-	int dollar = 1;
-	int Rupee = 63;
+	// Array Declares
+	double[] exchangeRates = new double[] {63.0,3.0,3.0,595.0,18.0,107.0,2.0};
 
 	private void printCurrencies() {
-		System.out.println("rupee: " + rupee);
-		System.out.println("dirham: " + dirham);
-		System.out.println("real: " + real);
-		System.out.println("chilean_peso: " + chilean_peso);
-		System.out.println("mexican_peso: " + mexican_peso);
-		System.out.println("_yen: " + _yen);
-		System.out.println("$australian: " + $australian);
-		System.out.println("dollar: " + dollar);
-		System.out.println("Rupee: " + Rupee);
+		System.out.println("rupee: " + exchangeRates[0]);
+		System.out.println("dirham: " + exchangeRates[1]);
+		System.out.println("real: " + exchangeRates[2]);
+		System.out.println("chilean_peso: " + exchangeRates[3]);
+		System.out.println("mexican_peso: " + exchangeRates[4]);
+		System.out.println("_yen: " + exchangeRates[5]);
+		System.out.println("$australian: " + exchangeRates[exchangeRates.length-1]);
 	}
 
 	public static void main(String[] args) {
