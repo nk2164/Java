@@ -1,4 +1,4 @@
-/* This will only work for an array with one missing number */
+/* This will only work for an array with one missing */
 
 package com.nk2164.algorithms;
 
