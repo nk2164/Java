@@ -44,7 +44,62 @@ public class BasicsDemo {
 		System.out.println("myArray.length : " + myArray.length);
 		System.out.println("myArray[1] : " + myArray[1]);
 
-	}
+		int[][] my2DArray = new int[4][2];
+		my2DArray[0][0] = 9;
+		my2DArray[0][1] = 11;
+
+		my2DArray[1][0] = 2;
+		my2DArray[1][1] = 5;
+
+		my2DArray[2][0] = 4;
+		my2DArray[2][1] = 4;
+
+		my2DArray[3][0] = 6;
+		my2DArray[3][1] = 13;
+		
+		int[][] myAlt2DArray = new int[][] {{9,11},
+											{2,5},
+											{4,4},
+											{6,13}
+											};
+											
+		int[][] myYA2DArray = new int[4][];
+		
+		int[] col1 = new int[1];
+		int[] col2 = new int[2];
+		int[] col3 = new int[3];
+		int[] col4 = new int[4];
+		
+		//1 3 5  8
+		//3 4 6  9
+		//5 6 7  10 
+		//8 9 10 11
+		
+		col1[0] = 1;
+		
+		col2[0] = 3;
+		col2[1] = 4;
+		
+		col3[0] = 5;
+		col3[1] = 6;
+		col3[2] = 7;
+		
+		col4[0] = 8;
+		col4[0] = 9;
+		col4[0] = 10;
+		col4[0] = 11;
+		
+		//Assignment
+		
+		myYA2DArray[0] = col1;
+		myYA2DArray[0] = col2;
+		myYA2DArray[0] = col3;
+		myYA2DArray[0] = col4;
+		
+		
+		
+		}
+
 
 	public static void main(String[] args) {
 		// typeCasting();
