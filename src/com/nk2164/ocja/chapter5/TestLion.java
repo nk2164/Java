@@ -4,7 +4,8 @@ public class TestLion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-         Lion l1 = new Lion();
+		 int age  = 4;
+         Lion l1 = new Lion(age);
          l1.setAge(10);
          l1.roar();
 	}
