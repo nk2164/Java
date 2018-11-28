@@ -2,15 +2,15 @@ package com.nk2164.algorithms;
 
 public class Node {
 
-	public int value;
-	public Node next;
+	private int data;
+	private Node next;
 	
-	public int getValue() {
-		return value;
+	public int getData() {
+		return data;
 	}
 	
-	public void setValue(int value) {
-		this.value = value;
+	public void setData(int data) {
+		this.data = data;
 	}
 	
 	public Node getNext() {
