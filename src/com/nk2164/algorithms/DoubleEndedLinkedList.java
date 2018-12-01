@@ -77,6 +77,7 @@ public class DoubleEndedLinkedList {
 	}
 	
 	public void insertInOrder(String homeOwnerName, int houseNumber) {
+		
 		Neighbor theNewLink = new Neighbor(homeOwnerName,houseNumber);
 		
 		Neighbor previousNeighbor = null;
@@ -110,6 +111,17 @@ public class DoubleEndedLinkedList {
 		theLinkedList.insertAfterKey("Derek Banas", 10, 7);
 		
 		theLinkedList.display();
+		
+		System.out.println("\n");
+		
+		NeighborIterator neighbors = new NeighborIterator(theLinkedList);
+		
+		neighbors.currentNeighbor.display();
+		System.out.println(neighbors.hasNext());
+		neighbors.next();
+		neighbors.currentNeighbor.display();
+		neighbors.remove();
+		neighbors.currentNeighbor.display();
 	}
 	
 	public void display() {
