@@ -12,9 +12,14 @@ public class NodeTest {
 		
 		Node n3 = new Node();
 		n3.setData(7);
-		n2.setNext(n3);				
+		n2.setNext(n3);
+		
+		Node n4 = new Node();
+		n4.setData(20);
+		n3.setNext(n4);
 		
 		printChain(n1);
+		System.out.println("This linked list has " + getNodeDepth(n1) + " nodes!");
 	}
 	
 	static void printChain(Node n){
@@ -23,5 +28,14 @@ public class NodeTest {
 			n = n.getNext();
 		}
 	}
-
+	
+	// Get the depth of the node.
+	static int getNodeDepth(Node n) {
+		int count = 0;
+		while(n != null) {
+		  count += 1;
+		  n = n.getNext();	
+		}
+		return count;
+	}
 }
