@@ -102,7 +102,8 @@ public class DoubleEndedLinkedList {
 	
 	public static void main(String[] args) {
 		DoubleEndedLinkedList theLinkedList = new DoubleEndedLinkedList();
-		
+		theLinkedList.insetInFirstPosition("Mark Evans 0", 1);
+		theLinkedList.insetInFirstPosition("Mark Evans A", 2);
 		theLinkedList.insertInOrder("Mark Evans 1", 7);
 		theLinkedList.insertInOrder("Mark Evans 2", 9);
 		theLinkedList.insertInOrder("Mark Evans 3", 6);

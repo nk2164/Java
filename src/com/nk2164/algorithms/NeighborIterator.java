@@ -16,8 +16,7 @@ public class NeighborIterator {
 	public boolean hasNext() {
 		if (currentNeighbor.next != null) {
 			return true;
-		}
-		
+		}		
 		return false;
 	}
 	
