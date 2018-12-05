@@ -26,7 +26,6 @@ public class DoubleEndedLinkedList {
 		// and then, replace the firstlink with the new link.
 		theNewLink.next = firstLink;
 		firstLink = theNewLink;
-
 	}
 
 	public void insertInLastPosition(String homeOwnerName, int houseNumber) {
