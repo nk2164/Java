@@ -12,6 +12,9 @@ public class Peacock extends Bird {
 	public static void main(String[] args) {
 		Bird bird = new Peacock();
 		bird.displayInformation();
+		
+		Peacock peacock = new Peacock();
+		peacock.displayInformation();
 	}
 
 }
