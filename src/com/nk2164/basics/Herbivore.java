@@ -8,6 +8,8 @@ public abstract interface Herbivore {
 	
 	int amount = 10;
 	
+	public static final int HERBIVORE = 2;
+	
 	public static void eatGrass() {
 	};
 	
