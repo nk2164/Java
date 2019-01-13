@@ -6,7 +6,7 @@ public class ZooWorker {
 		System.out.println("I am feeding a " + reptile.getName());
 	}
 	public static void main(String[] args) {
-		feed(new Reptile("Reptile!"));
+		feed(new Reptile("Reptiles!"));
 		feed(new Alligators());
 		feed(new Crocodile());
 	}

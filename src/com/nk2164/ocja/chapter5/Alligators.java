@@ -8,6 +8,6 @@ public class Alligators extends Reptile {
 	
 	@Override
 	public String getName() {
-		return "Alligator!";
+		return "Alligators!";
 	}
 }
