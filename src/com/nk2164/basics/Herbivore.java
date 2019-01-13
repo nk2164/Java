@@ -5,4 +5,9 @@ public abstract interface Herbivore {
 	int COUNT = 2;
 
 	public abstract void eatPlants();
+	
+	int amount = 10;
+	
+	public static void eatGrass() {
+	};	
 }
