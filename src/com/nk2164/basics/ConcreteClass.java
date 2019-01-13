@@ -1,6 +1,6 @@
 package com.nk2164.basics;
 
-public class ConcreteClass extends AbstractClass {
+public class ConcreteClass extends AbstractClass implements InterfaceTest {
 
 	public ConcreteClass(String name,int age) {
 		this.name = name;
@@ -8,12 +8,12 @@ public class ConcreteClass extends AbstractClass {
 	}
 	
 	@Override
-	String getName() {
+	public String getName() {
 		return this.name;
 	}
 
 	@Override
-	int getAge() {
+	public int getAge() {
 		return this.age;
 	}
 

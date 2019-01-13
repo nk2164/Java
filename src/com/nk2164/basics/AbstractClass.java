@@ -4,8 +4,8 @@ public abstract class AbstractClass {
 	String name;
 	int age;
 
-	abstract String getName();
+	public abstract String getName();
 
-	abstract int getAge();
+	public abstract int getAge();
 
 }
