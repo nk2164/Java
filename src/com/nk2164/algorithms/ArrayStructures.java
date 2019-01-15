@@ -2,7 +2,7 @@ package com.nk2164.algorithms;
 
 public class ArrayStructures {
 	
-	private int[] theArray = new int[50];
+	private int[] theArray = new int[40];
 	private int arraySize = 10;
 	
 	public void generateRandomArray() {
