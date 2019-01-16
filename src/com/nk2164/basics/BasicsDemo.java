@@ -3,7 +3,7 @@ package com.nk2164.basics;
 public class BasicsDemo {
 
 	static void varargsOverload(boolean b, int i, int j, int k) {
-		System.out.println("Inside varargs method without overload !");
+		System.out.println("Inside varargs method without overload!");
 	}
 	
 	static void varargsOverload(boolean b,int... list) {
