@@ -1,6 +1,6 @@
 package com.nk2164.ocja.chapter5;
 
-public class Fish {
+public class  Fish {
 
 	protected int size;
 	private int age;
