@@ -22,7 +22,7 @@ public class FinalProject {
 		JTextField NameTextField = new JTextField();
 		JTextField userNameTextField = new JTextField();
 		JTextField PasswordTextField = new JTextField();
-		JLabel NameLable = new JLabel("Name :");
+		JLabel NameLable = new JLabel("Name:");
 		JLabel userNameLable = new JLabel("Username :");
 		JLabel passwordNameLable = new JLabel("Password :");
 
