@@ -10,7 +10,7 @@ public class User {
 		super();
 		this.name = name;
 		this.userName = userName;
-		this.passWord = passWord;
+		this.passWord =  passWord;
 	}
 
 	public String getName() {
