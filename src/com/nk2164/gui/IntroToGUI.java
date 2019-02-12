@@ -19,7 +19,7 @@ public class IntroToGUI {
 		f.setLocation(500, 200);
 		JTextField ourTextField = new JTextField();
 		JButton ourButton = new JButton();
-		ourButton.setText("Show TF1");
+		ourButton.setText("Show  TF1");
 		ourButton.setForeground(Color.BLUE);
 
 		JTextField ourTextField1 = new JTextField();
