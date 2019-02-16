@@ -1,6 +1,7 @@
 package com.nk2164.basics;
 
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.IntStream; 
 
 public class HelloWorld {
 
