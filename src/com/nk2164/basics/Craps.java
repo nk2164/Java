@@ -11,6 +11,7 @@ public class Craps {
 	};
 
 	// constants that represent the sum of dice
+	
 	private static final int SANKE_EYES = 2;
 	private static final int TREY = 3;
 	private static final int SEVEN = 7;
