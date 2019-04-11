@@ -5,6 +5,10 @@ public class DoWhileTest {
 	public static void main(String[] args) {
 		int counter = 1;
 		
+		String test = "init";
+		test = "changed";
+		System.out.println(test);
+		
 		do
 		{
 			System.out.printf("%d %n",counter);
