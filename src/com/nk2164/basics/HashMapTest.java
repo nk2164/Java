@@ -18,10 +18,17 @@ public class HashMapTest {
 		String key = "X";
 		
 		if (mapOfStringIntPairs.containsKey(key)) {
-			System.out.printf("Key = %s is present with Value =  %d", key ,mapOfStringIntPairs.get(key));
+			System.out.printf("Key = %s is present with Value =  %d %n", key ,mapOfStringIntPairs.get(key));
 		}
 		else {
-			System.out.printf("Key %s is not present.", key);
+			System.out.printf("Key %s is not present. %n", key);
+		}
+		
+		// Demonstrate the same functionality using keyset method.
+		for (String someKey:mapOfStringIntPairs.keySet()) {
+			System.out.printf("The maps contains %s key with " +
+					           "value = %d %n", someKey,mapOfStringIntPairs.get(someKey));
+			
 		}
 		
 	}
