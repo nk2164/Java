@@ -11,6 +11,13 @@ public class PassArray {
 		for (int value:array) {
 			System.out.printf("  %d",value);
 		}
+		
+		modifyArray(array);
+		System.out.printf("The value of the modified array is ", args);
+		
+		for (int value:array) {
+			System.out.printf("  %d",value);
+		}
 	}
 
 }
