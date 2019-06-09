@@ -1,6 +1,8 @@
 package com.nk2164.collections;
 
-public class Product {
+import java.util.Comparator;
+
+public class Product implements Comparable<Product>{
 
 	private String name;
 	private int weight;
@@ -14,7 +16,7 @@ public class Product {
 		return name;
 	}
 
-	public int getWeignt() {
+	public int getWeight() {
 		return weight;
 	}
 
@@ -22,5 +24,17 @@ public class Product {
 	public String toString() {
 		return "Product{name = " + this.name + ", weight = " + this.weight + "}";
 	}
+
+	@Override
+	public int compareTo(Product product) {
+		int compareWeight =  product.getWeight();
+		return this.weight - compareWeight; // ascending order.
+	}
+	
+	public static Comparator<Product> BY_WEIGHT = new Comparator<Product>() {
+		public int compare(Product product1,Product product2) {
+			return product1.compareTo(product2);
+		}
+	};
 	
 } 
