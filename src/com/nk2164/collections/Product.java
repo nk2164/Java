@@ -1,6 +1,7 @@
 package com.nk2164.collections;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Product implements Comparable<Product> {
 
@@ -39,9 +40,7 @@ public class Product implements Comparable<Product> {
 
 	@Override
 	public int hashCode() {
-		int result = name != null ? name.hashCode() : 0;
-		result = 31 * result + weight;
-		return result;
+		return Objects.hash(name, weight);
 	}
 
 	@Override
@@ -50,11 +49,12 @@ public class Product implements Comparable<Product> {
 			return true;
 		if (obj == null || getClass() != obj.getClass())
 			return false;
-		
+
 		final Product product = (Product) obj;
-		
-		if (weight != product.weight) return false;
-		return !(name != null ? !name.equals(product.name) : product.name != null);
+
+		if (weight != product.weight)
+			return false;
+		return Objects.equals(name, product.name);
 
 	}
 }
