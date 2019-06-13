@@ -2,12 +2,12 @@ package com.nk2164.collections;
 
 import java.util.Comparator;
 
-public class Product implements Comparable<Product>{
+public class Product implements Comparable<Product> {
 
 	private String name;
 	private int weight;
-	
-	public Product(String name,int weight) {
+
+	public Product(String name, int weight) {
 		this.name = name;
 		this.weight = weight;
 	}
@@ -27,14 +27,34 @@ public class Product implements Comparable<Product>{
 
 	@Override
 	public int compareTo(Product product) {
-		int compareWeight =  product.getWeight();
+		int compareWeight = product.getWeight();
 		return this.weight - compareWeight; // ascending order.
 	}
-	
+
 	public static Comparator<Product> BY_WEIGHT = new Comparator<Product>() {
-		public int compare(Product product1,Product product2) {
+		public int compare(Product product1, Product product2) {
 			return product1.compareTo(product2);
 		}
 	};
-	
-} 
+
+	@Override
+	public int hashCode() {
+		int result = name != null ? name.hashCode() : 0;
+		result = 31 * result + weight;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null || getClass() != obj.getClass())
+			return false;
+		
+		final Product product = (Product) obj;
+		
+		if (weight != product.weight) return false;
+		return !(name != null ? !name.equals(product.name) : product.name != null);
+
+	}
+}
