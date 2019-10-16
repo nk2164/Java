@@ -9,7 +9,6 @@ public class WarriorGame {
 	try {
 		Battle.startFight(thor, loki);
 	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	

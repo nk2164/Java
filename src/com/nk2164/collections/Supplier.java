@@ -15,7 +15,6 @@ public class Supplier {
 
 
 	public static Set<Product> products() {
-		// TODO Auto-generated method stub
 		return products;
 	}
 
