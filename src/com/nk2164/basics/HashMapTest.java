@@ -1,6 +1,6 @@
 package com.nk2164.basics;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Map;
 
 public class HashMapTest {
@@ -9,7 +9,7 @@ public class HashMapTest {
 		Integer[] arrayOfIntegers = {22,32,42,52,62,72,82,92};
 		String[]  arrayOfString   = {"A","B","C","D","E","F","G","H"};
 	
-		Map<String,Integer> mapOfStringIntPairs = new HashMap<String, Integer>();
+		Map<String,Integer> mapOfStringIntPairs = new TreeMap<String, Integer>();
 		
 		for (int j = 0; j < arrayOfIntegers.length; j++) {
 			mapOfStringIntPairs.put(arrayOfString[j], arrayOfIntegers[j]);

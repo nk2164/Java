@@ -1,11 +1,11 @@
 package com.nk2164.basics;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 
 public class HashMapDemo {
 
 	public static void main(String[] args) {
-		HashMap<String,Integer> points = new HashMap<String,Integer>();
+		TreeMap<String,Integer> points = new TreeMap<String,Integer>();
 		
 		points.put("one", 123);
 		points.put("two", 223);
